@@ -10,14 +10,14 @@ const CurrencySelection = (props) => {
             payload: curr,
         });
     }
-//So i got the drop down to work, I am on the styling part of step 3 and I already did parts 4 and 5
+//So i got everything working except task 3!
     return (
         <div>
-            <select onChange = {(event)=>setCurr(event.target.value)}>
-                <option value="$" name="Dollar">$ Dollar</option>
-                <option value="£" name="Pound">£ Pound</option>
-                <option value="€" name="Euro">€ Euro</option>
-                <option value="₹" name="Ruppee">₹ Ruppee</option>
+            <select className = 'alert alert-success currency' onChange = {(event)=>setCurr(event.target.value)}>
+                <option className = "currOpt" value="$" name="Dollar">$ Dollar</option>
+                <option className = "currOpt" value="£" name="Pound">£ Pound</option>
+                <option className = "currOpt" value="€" name="Euro">€ Euro</option>
+                <option className = "currOpt" value="₹" name="Ruppee">₹ Ruppee</option>
             </select>
         </div>
     );
