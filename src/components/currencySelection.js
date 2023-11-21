@@ -12,8 +12,9 @@ const CurrencySelection = (props) => {
     }
 //So i got everything working except task 3!
     return (
+       
         <div>
-            <select className = 'alert alert-success currency' onChange = {(event)=>setCurr(event.target.value)}>
+            <select className = 'alert alert-success currency' onChange = {(event)=>setCurr(event.target.value)} id="inputGroupSelect03">
                 <option className = "currOpt" value="$" name="Dollar">$ Dollar</option>
                 <option className = "currOpt" value="£" name="Pound">£ Pound</option>
                 <option className = "currOpt" value="€" name="Euro">€ Euro</option>
